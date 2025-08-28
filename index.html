@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emergency Hotline</title>
-     <!-- daisyUI cdn -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emergency Service Directory</title>
+    <!-- daisyUI cdn -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@5"
       rel="stylesheet"
@@ -21,9 +21,336 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+  </head>
 
-</head>
-<body>
-    <h1 class="bg-red-700">hello</h1>
-</body>
+  <body>
+    <!-- NAVBAR section-->
+    <header>
+      <div class="navbar bg-[#FFFFFF] shadow-sm px-10 py-5">
+        <div class="flex justify-between items-center w-full">
+          <div class="flex items-center gap-3">
+            <img src="./assets/logo.png" class="w-25 h-25" alt="" />
+            <span class="font-bold text-3xl text-[#006747]"
+              >Emergency <br />
+              Service</span
+            >
+          </div>
+        </div>
+
+        <div class="flex gap-6">
+          <!-- Heart section -->
+          <div class="flex items-center gap-1">
+            <span id="heartCount" class="text-3xl font-bold">0</span>
+            <span class="text-red-500 text-3xl"
+              ><i class="fa-solid fa-heart"></i
+            ></span>
+          </div>
+
+          <!-- Coin section  -->
+          <div class="flex items-center gap-1">
+            <span id="coinCount" class="text-3xl font-bold">100</span>
+            <span class="text-yellow-500 text-3xl"
+              ><i class="fa-solid fa-coins"></i
+            ></span>
+          </div>
+
+          <!-- Copyy section -->
+
+          <button
+            id="copyBtnNavbar"
+            class="btn bg-gradient-to-r from-[#013223]  to-[#013223] font-bold text-2xl rounded-full p-7 text-white"
+          >
+            <span id="copyCount">0</span> Copy
+          </button>
+        </div>
+      </div>
+        <div class="text-white py-25 bg-gradient-to-r from-[#013223]  to-[#013223]">
+      <div class="text-center">
+        <img
+          src="./assets/logo-dark.png"
+          alt=""
+          class="w-30 mx-auto mb-4"
+        />
+        <h1 class="text-4xl font-bold mb-8">Emergency Service Directory</h1>
+        <p>
+         Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh 
+        </p>
+      </div>
+    </div>
+
+    </header>
+
+
+  
+   <section id="products-container" class="w-11/12 mx-auto py-10 grid grid-cols-1 md:grid-cols-12 gap-8">
+
+  <!-- Products Section (Left) -->
+  <section class="col-span-12 md:col-span-9">
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+    <!-- Card 1 -->
+
+
+    <div class="card bg-white shadow-md p-4 rounded-lg">
+      <div class="flex justify-between items-start mb-3">
+        <img src="./assets/emergency.png" alt="" class=" w-16 h-16">
+        <div class="cursor-pointer text-red-500 text-lg ">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+      </div>
+      <div class="mb-2 font-bold sm:text-xl">National Emergency Number</div>
+      <div class="text-sm text-gray-500">National Emergency</div>
+      <div class="text-2xl font-bold mt-2">999</div>
+      <div class="badge badge-outline mt-2 text-sm text-gray-400">All</div>
+
+      <!-- Buttons -->
+      <div class="flex justify-between mt-4 gap-2">
+        <button class="btn flex-1 text-xl rounded-md bg-white border">
+          <i class="fa-solid fa-copy"></i> Copy
+        </button>
+        <button class="btn flex-1 bg-[#00A63E] font-bold text-xl rounded-md text-white">
+          Call
+        </button>
+      </div>
+    </div>
+
+<!-- card 2 -->
+
+    <div class="card bg-white shadow-md p-4 rounded-lg">
+      <div class="flex justify-between items-start mb-3">
+        <img src="./assets/emergency.png" alt="" class=" w-16 h-16">
+        <div class="cursor-pointer text-red-500 text-lg ">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+      </div>
+      <div class="mb-2 font-bold sm:text-xl">Police Helpline Number</div>
+      <div class="text-sm text-gray-500">Police Station</div>
+      <div class="text-2xl font-bold mt-2">999</div>
+      <div class="badge badge-outline mt-2 text-sm text-gray-400">All</div>
+
+      <!-- Buttons -->
+      <div class="flex justify-between mt-4 gap-2">
+        <button class="btn flex-1 text-xl rounded-md bg-white border">
+          <i class="fa-solid fa-copy"></i> Copy
+        </button>
+        <button class="btn flex-1 bg-[#00A63E] font-bold text-xl rounded-md text-white">
+          Call
+        </button>
+      </div>
+    </div>
+
+<!-- card 3 -->
+
+
+     <div class="card bg-white shadow-md p-4 rounded-lg">
+      <div class="flex justify-between items-start mb-3">
+        <img src="./assets/emergency.png" alt="" class=" w-16 h-16">
+        <div class="cursor-pointer text-red-500 text-lg ">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+      </div>
+      <div class="mb-2 font-bold sm:text-xl">National Emergency Number</div>
+      <div class="text-sm text-gray-500">National Emergency</div>
+      <div class="text-2xl font-bold mt-2">999</div>
+      <div class="badge badge-outline mt-2 text-sm text-gray-400">All</div>
+
+      <!-- Buttons -->
+      <div class="flex justify-between mt-4 gap-2">
+        <button class="btn flex-1 text-xl rounded-md bg-white border">
+          <i class="fa-solid fa-copy"></i> Copy
+        </button>
+        <button class="btn flex-1 bg-[#00A63E] font-bold text-xl rounded-md text-white">
+          Call
+        </button>
+      </div>
+    </div>
+
+
+
+<!-- card 4 -->
+
+     <div class="card bg-white shadow-md p-4 rounded-lg">
+      <div class="flex justify-between items-start mb-3">
+        <img src="./assets/emergency.png" alt="" class=" w-16 h-16">
+        <div class="cursor-pointer text-red-500 text-lg ">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+      </div>
+      <div class="mb-2 font-bold sm:text-xl">National Emergency Number</div>
+      <div class="text-sm text-gray-500">National Emergency</div>
+      <div class="text-2xl font-bold mt-2">999</div>
+      <div class="badge badge-outline mt-2 text-sm text-gray-400">All</div>
+
+      <!-- Buttons -->
+      <div class="flex justify-between mt-4 gap-2">
+        <button class="btn flex-1 text-xl rounded-md bg-white border">
+          <i class="fa-solid fa-copy"></i> Copy
+        </button>
+        <button class="btn flex-1 bg-[#00A63E] font-bold text-xl rounded-md text-white">
+          Call
+        </button>
+      </div>
+    </div>
+
+
+<!-- card 5 -->
+
+
+
+ <div class="card bg-white shadow-md p-4 rounded-lg">
+      <div class="flex justify-between items-start mb-3">
+        <img src="./assets/emergency.png" alt="" class=" w-16 h-16">
+        <div class="cursor-pointer text-red-500 text-lg ">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+      </div>
+      <div class="mb-2 font-bold sm:text-xl">National Emergency Number</div>
+      <div class="text-sm text-gray-500">National Emergency</div>
+      <div class="text-2xl font-bold mt-2">999</div>
+      <div class="badge badge-outline mt-2 text-sm text-gray-400">All</div>
+
+      <!-- Buttons -->
+      <div class="flex justify-between mt-4 gap-2">
+        <button class="btn flex-1 text-xl rounded-md bg-white border">
+          <i class="fa-solid fa-copy"></i> Copy
+        </button>
+        <button class="btn flex-1 bg-[#00A63E] font-bold text-xl rounded-md text-white">
+          Call
+        </button>
+      </div>
+    </div>
+
+
+
+<!-- card 6 -->
+
+    <div class="card bg-white shadow-md p-4 rounded-lg">
+      <div class="flex justify-between items-start mb-3">
+        <img src="./assets/emergency.png" alt="" class=" w-16 h-16">
+        <div class="cursor-pointer text-red-500 text-lg ">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+      </div>
+      <div class="mb-2 font-bold sm:text-xl">National Emergency Number</div>
+      <div class="text-sm text-gray-500">National Emergency</div>
+      <div class="text-2xl font-bold mt-2">999</div>
+      <div class="badge badge-outline mt-2 text-sm text-gray-400">All</div>
+
+      <!-- Buttons -->
+      <div class="flex justify-between mt-4 gap-2">
+        <button class="btn flex-1 text-xl rounded-md bg-white border">
+          <i class="fa-solid fa-copy"></i> Copy
+        </button>
+        <button class="btn flex-1 bg-[#00A63E] font-bold text-xl rounded-md text-white">
+          Call
+        </button>
+      </div>
+    </div>
+
+<!-- card 7 -->
+
+    <div class="card bg-white shadow-md p-4 rounded-lg">
+      <div class="flex justify-between items-start mb-3">
+        <img src="./assets/emergency.png" alt="" class=" w-16 h-16">
+        <div class="cursor-pointer text-red-500 text-lg ">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+      </div>
+      <div class="mb-2 font-bold sm:text-xl">National Emergency Number</div>
+      <div class="text-sm text-gray-500">National Emergency</div>
+      <div class="text-2xl font-bold mt-2">999</div>
+      <div class="badge badge-outline mt-2 text-sm text-gray-400">All</div>
+
+      <!-- Buttons -->
+      <div class="flex justify-between mt-4 gap-2">
+        <button class="btn flex-1 text-xl rounded-md bg-white border">
+          <i class="fa-solid fa-copy"></i> Copy
+        </button>
+        <button class="btn flex-1 bg-[#00A63E] font-bold text-xl rounded-md text-white">
+          Call
+        </button>
+      </div>
+    </div>
+
+<!-- card 8 -->
+
+     <div class="card bg-white shadow-md p-4 rounded-lg">
+      <div class="flex justify-between items-start mb-3">
+        <img src="./assets/emergency.png" alt="" class=" w-16 h-16">
+        <div class="cursor-pointer text-red-500 text-lg ">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+      </div>
+      <div class="mb-2 font-bold sm:text-xl">National Emergency Number</div>
+      <div class="text-sm text-gray-500">National Emergency</div>
+      <div class="text-2xl font-bold mt-2">999</div>
+      <div class="badge badge-outline mt-2 text-sm text-gray-400">All</div>
+
+      <!-- Buttons -->
+      <div class="flex justify-between mt-4 gap-2">
+        <button class="btn flex-1 text-xl rounded-md bg-white border">
+          <i class="fa-solid fa-copy"></i> Copy
+        </button>
+        <button class="btn flex-1 bg-[#00A63E] font-bold text-xl rounded-md text-white">
+          Call
+        </button>
+      </div>
+    </div>
+
+
+    <!-- card 9 -->
+   <div class="card bg-white shadow-md p-4 rounded-lg">
+      <div class="flex justify-between items-start mb-3">
+        <img src="./assets/emergency.png" alt="" class=" w-16 h-16">
+        <div class="cursor-pointer text-red-500 text-lg ">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+      </div>
+      <div class="mb-2 font-bold sm:text-xl">National Emergency Number</div>
+      <div class="text-sm text-gray-500">National Emergency</div>
+      <div class="text-2xl font-bold mt-2">999</div>
+      <div class="badge badge-outline mt-2 text-sm text-gray-400">All</div>
+
+      <!-- Buttons -->
+      <div class="flex justify-between mt-4 gap-2">
+        <button class="btn flex-1 text-xl rounded-md bg-white border">
+          <i class="fa-solid fa-copy"></i> Copy
+        </button>
+        <button class="btn flex-1 bg-[#00A63E] font-bold text-xl rounded-md text-white">
+          Call
+        </button>
+      </div>
+    </div>
+ 
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Sidebar / History (Right) -->
+  <aside class="col-span-12 md:col-span-3 mt-6 md:mt-0">
+    <div class="bg-white shadow-md rounded-lg p-4">
+      <div class="flex justify-between items-center mb-4">
+        <h3 class="font-bold">📞 Call History</h3>
+        <button class="btn btn-sm btn-success" id="clearHistory">Clear</button>
+      </div>
+      <div id="historyList" class="space-y-2 text-sm text-gray-600">
+        <p>No calls yet.</p>
+      </div>
+    </div>
+  </aside>
+
+</section>
+
+
+    <script src="./index.js"></script>
+  </body>
 </html>
